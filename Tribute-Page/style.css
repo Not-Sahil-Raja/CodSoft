@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Kanit&family=Onest&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+    
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  background-color: #141414;
+  background-image: linear-gradient(180deg, #141414 0%, #222222 50%, #000000 100%);
+  position: fixed;
+  width: 10vw;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Onest', sans-serif;
+  box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.267) inset;
+  z-index: 15;
+}
+
+nav a{
+  text-decoration: none;
+  color: rgb(212, 210, 96);
+  font-weight: bold;
+}
+main{
+  margin-left: 10vw;
+  overflow-x: hidden;
+  height: 100vh;
+  background-color: rgb(1, 18, 41);
+  scroll-behavior: smooth;
+  
+}
+
+.home-area{
+  color: white;
+  position: relative;
+  background: linear-gradient(0deg,rgb(0, 0, 0)  0% ,rgb(27, 20, 15)  20%, rgb(172, 169, 7) 100%);
+  height: 100vh;
+}
+
+.home-area h1{
+  font-family: 'Viga', sans-serif;
+  position: relative;
+  z-index: 2;
+  top: 18vh;
+  font-size: 10vw;
+  left: 10vw;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0) ;
+  color: rgb(255, 238, 0);
+}
+.home-area h2{
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+  z-index: 2;
+  top: 13vh;
+  font-size: 5vw;
+  left: 10vw;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0) ;
+  
+}
+
+
+.img1{
+  height: 80vh;
+  object-fit: cover; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  width: 80VW;
+  filter:  brightness(.3) ;
+  border-radius:15px ;
+  box-shadow: 2px 2px 10px rgb(255, 230, 0);
+
+}
+/* .img1Nobg{
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 100%;
+  filter: brightness(.7) drop-shadow(-2px -2px 8px black);
+  
+} */
+
+.intro-area{
+  background-color: #000000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  position: relative;
+  
+}
+.para1{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 70vw;
+  font-size: 1.5vw;
+  color:azure;
+}
+.text-box{
+  margin-top: 10vh;
+  background-color: #6e6e6e42;
+  padding: 5vw;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(15px);
+  z-index: 1;
+  box-shadow: 2px 2px 10px rgb(141, 141, 141) inset;
+}
+.img2{
+  position: absolute;
+  z-index: 0;
+  height: 90vh;
+  width: 40vw;
+  object-fit: cover;
+  right: 0;
+  bottom: 0;
+}
+
+.carrer-area{
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg,rgb(0, 0, 0)  20% ,#614F89  50%, rgb(0, 0, 0) 80%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.text-box-2{
+  background-color: #48415a75;
+  padding: 3vw;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(15px);
+  z-index: 1;
+  box-shadow: 2px 5px 10px rgb(38, 27, 65) inset;
+  width: 80vw;
+  margin: 5vh 0;
+  
+}
+.para2{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 70vw;
+  color:rgb(212, 227, 255);
+  
+}
+.img3{
+  position: absolute;
+  width: 20vw;
+  height: 25vh;
+  object-fit: cover;
+  border-radius: 15px;
+  z-index: 0;
+  bottom: 8vh;
+}
+.img4{
+  position: absolute;
+  width: 20vw;
+  height: 25vh;
+  object-fit: cover;
+  border-radius: 15px;
+  z-index: 0;
+  bottom: 12vh;
+  left: 11%;
+}
+.img5{
+  position: absolute;
+  width: 20vw;
+  height: 25vh;
+  object-fit: cover;
+  border-radius: 15px;
+  z-index: 0;
+  bottom: 12vh;
+  right: 11%;
+}
+
+.honors-area{
+  height: 100vh;
+  background: rgb(94,27,27);
+  background: linear-gradient(0deg, rgb(31, 30, 30) 0%, rgba(0,0,0,1) 100%);
+  position: relative;
+  display: flex;
+  color: rgb(221, 221, 221);
+  flex-direction: column;
+}
+.text-box-3{
+  margin: 0 5rem;
+  font-family: 'Roboto', sans-serif;
+  z-index: 5;
+  background-color: #00000088;
+  padding: 2rem;
+  height: 80vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(25px);
+}
+.text-box-3 ul{
+  font-size: 1vw;
+  margin: 1rem 0;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px black;
+  
+}
+.text-box-3 ul li{
+  font-weight: bold;
+  
+  color: rgb(184, 184, 184);
+}
+.awards-area{
+  height: 100vh;
+  background: rgb(247, 247, 247);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(31, 30, 30) 100%);
+  position: relative;
+  display: flex;
+  color: rgb(221, 221, 221);
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: 'Oswald', sans-serif;
+  align-items: center;
+
+}
+.box{
+  margin: 3vh;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: #48515a2f;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(14, 14, 14, 0.623) inset;
+}
+
+.boxed{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.content-box-headline{
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.img6{
+  position: absolute;
+  height: 90vh;
+  width: 80vw;
+  object-fit: cover;
+  opacity: 30%;
+  border-radius: 15px;
+}
+.leagacy-area{
+  height: 100vh;
+  background: rgb(247, 247, 247);
+  background: linear-gradient(0deg, rgb(31, 30, 30)  0%, rgba(0,0,0,1) 100%);
+  position: relative;
+  display: flex;
+  color: rgb(221, 221, 221);
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: 'Oswald', sans-serif;
+  align-items: flex-start;
+
+}
+.text-box-4{
+  background-color: rgba(29, 29, 29, 0.788);
+  width: 50vw;
+  height: 70vh;
+  padding: 2vw;
+  border-radius: 15px;
+  margin-left:5vw;
+  z-index: 2;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(25px);
+  box-shadow: 2px 2px 8px rgb(73, 73, 73) inset;
+  font-size: 1.2rem;
+}
+
+.img7{
+  position: absolute;
+  height: 90vh;
+  width: 80vw;
+  object-fit: cover;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 2px 2px 10px rgb(73, 73, 73) ;
+  opacity: 0.8;
+}
