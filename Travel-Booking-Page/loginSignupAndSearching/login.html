@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login-signup-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <a href="/project/index.html">Home <span></span></a>
+      <a href="searchingPage.php">Packages <span></span></a>
+      <a href="/project/aboutUs.php">About Us <span></span></a>
+      <a href="login.html">Login <span></span></a>
+    </nav>
+    <div class="background-log">
+      <img
+        src="https://images.unsplash.com/photo-1600438831035-48f5f196d3bf?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+    </div>
+    <div class="login">
+      <h1>LOGIN</h1>
+      <br />
+      <form action="connect.php" method="post">
+        <div class="input-group">
+          <i class="fa-solid fa-user" style="color: #635037"></i>
+          <input type="text" name="name" required /><br />
+          <label class="nameslabel">UserName</label>
+        </div>
+        <div class="input-group">
+          <i class="fa-solid fa-lock" style="color: #635037"></i>
+          <input type="password" name="password" required /><br />
+          <label>Password</label>
+        </div>
+        <input type="submit" value="Login" /><br />
+        <p>Don't have a account <a href="signup.html">SignUp</a></p>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

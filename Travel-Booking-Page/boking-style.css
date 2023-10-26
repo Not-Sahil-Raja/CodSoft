@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-y: hidden;
+}
+
+.booking{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.bg-img{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.text-form{
+    background-color: #382f248f;
+    width: 40vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
+    box-shadow: 0 0 1rem rgb(48, 48, 48) inset;
+}
+
+.heading-title{
+    font-family: 'syne', sans-serif;
+    font-size: 2.5vw;
+    color: #ecf2ff;
+    padding: 0 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    margin-top: 1.2vh;
+    text-wrap: nowrap;
+}
+
+.book-form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    height: 90%;
+    padding:2vw;
+}
+
+.booking .book-form .flex .inputBox input{ 
+    width: 100%;
+    padding: .5rem;
+    border: .13rem solid rgb(87, 87, 87);
+    border-radius: .5rem;
+    font-size: 1.8vh;
+}
+
+ .inputBox:nth-child(5){
+    color: aqua;
+    gap: 1.2rem;
+    display: flex;
+}
+
+.inputBox:nth-child(5) div{
+    flex: 1;
+    padding: 1rem 0;
+    
+}
+.inputBox:nth-child(6){
+    color: aqua;
+    gap: 1.2rem;
+    display: flex;
+}
+
+.inputBox:nth-child(6) div{
+    flex: 1;
+    padding: 1rem 0;
+    object-fit: contain;
+    overflow: auto;
+}
+
+.booking .book-form .flex .inputBox span{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffffd8;
+    display: block;
+    margin-top: 2vh;
+    margin-bottom: .2rem;
+    font-family: 'syne';
+}
+.booking .book-form .flex .inputBox ::placeholder{
+    font-family: 'syne';
+}
+.booking .book-form .flex .inputBox input{
+    font-family: 'syne';
+}
+.booking .book-form .btn{
+    margin-top: 2rem;
+    padding: 1.2vh 1.5vw;
+    font-weight: bold;
+    font-family: 'syne', sans-serif;
+    border-radius: 10px;
+    border: none;
+    font-size: .8vw;
+    width: 15vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-overflow: clip;
+    background-color: #1a150e;
+    color: #c5aa87;
+    transition: all .3s ease-in;
+    border: .1rem solid #c5aa87;
+}
+
+.btn:active{
+    scale: 1.2;
+}
+
+.btn:hover{
+    background-color: #c5aa87;
+    box-shadow: 0 .5rem 0 #634f34;
+    font-size: large;
+}
+
+.packageShower{
+position:absolute;
+background-color: #312a20;
+top: 50%;
+right: -90%;
+transform: translate(0,-50%);
+height: 50vh;
+width: 20vw;
+padding: 1vw;
+text-align: center;
+border-radius: 1rem;
+border:2px solid #332819;
+box-shadow: 0 0 1rem rgb(44, 41, 41) inset;
+
+/* res */
+
+}
+.packageShower img{
+    height: 22vh;
+    width: 18vw;
+    border-radius: 1rem;
+    margin-bottom: 1.5vh;
+    object-fit: cover;
+    box-shadow: 0 .2rem 1rem .5rem rgb(32, 30, 30);
+}
+.packageShower input{
+    font-family: 'syne';
+    padding: .5rem .9rem;
+    margin: .8rem;
+    text-align: center;
+    cursor:default;
+    font-size: 1rem;
+    background-color: #524431;
+    color: rgb(253, 233, 207);
+    outline: none;
+    border-radius: 1rem;
+    border: none;
+}
+.returnPkg{
+    position: absolute;
+    top: 75%;
+    right: -79%;
+    transform: translate(0,-50%);
+    background-color: bisque;
+    padding: .5rem .9rem;
+    color: #695336;
+    font-family: 'syne';
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: .5rem;
+    transition: all .35s ease-in;
+    text-align: center;
+}
+.returnPkg:hover{
+    background-color: rgb(240, 203, 157);
+    box-shadow: 0 .5rem 0 #1a150e;
+    font-size: large;
+}
+.returnPkg:active{
+    font-size: small;
+}
+
+/* for sweetAlert */
+body.swal2-shown > [aria-hidden="true"] {
+    transition: 0.1s filter;
+    filter: blur(10px);
+  }
+  
+/* responsive */
+
+@media(max-width:500px){
+    .booking{
+        align-items: center;
+    }
+    .text-form{
+        width: 90vw;
+        border-radius: 1rem;
+        height: 100vh;
+        margin: 1rem;
+        padding: .5rem;
+    }
+    .inputBox:nth-child(5) div{
+        padding: 0;
+    }
+    .inputBox:nth-child(6) div{
+        padding: 0;
+    }
+    .heading-title{
+        font-size: 1.2rem;
+    }
+
+    .packageShower{
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        height: 13vh;
+        left: 15%;
+        top: 82%;
+        padding: .2rem .5rem;
+        align-items: center;
+        justify-content: space-around;
+        transform: translate(-50%,0);
+        flex-wrap: wrap;
+        gap: .3rem;       
+        transition: all .3s ease-in;
+        overflow: hidden;
+    }
+    .packageShower:active{
+        width: 40vh;
+        left: 50%;
+    }
+
+    .packageShower img{
+        height: 3rem;
+        width: 3rem;
+        flex: 1;
+        margin-right: .5rem;
+    }
+    .packageShower input{
+        opacity: 1;
+        margin: .1rem;
+        font-size: .6rem;
+        flex: 2;
+        
+    }
+    .returnPkg{
+        font-size: .65rem;
+        right: 3%;
+        top: 98.9%;
+    }
+    .booking .book-form .btn{
+        font-size: .7rem;
+        width: 30%;
+    }
+
+}

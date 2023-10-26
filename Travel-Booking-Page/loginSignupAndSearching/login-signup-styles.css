@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav{
+    background-color: rgb(255, 235, 211);
+    box-shadow: 0 0 5px rgba(27, 27, 27, 0.384);
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10rem;
+    width: 50vw;
+    position: fixed;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%);
+    animation: navbar 1.5s ease-in-out ;
+    box-shadow: .3rem .3rem 3rem #1f170daf ;
+  }
+  nav a{
+    position: relative;
+    font-family: 'Syne', sans-serif;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #695336;
+    padding: .4rem 1rem;
+    border-radius: 1rem;
+    animation: nav-text-slide 1.2s ease-in-out 1s forwards;
+    opacity: 0;
+  }
+  nav a:nth-child(2){
+    animation: nav-text-slide 1.2s ease-in-out 1.2s forwards;
+  }
+  nav a:nth-child(3){
+    animation: nav-text-slide 1.2s ease-in-out 1.4s forwards;
+  }
+  nav a:nth-child(4){
+    animation: nav-text-slide 1.2s ease-in-out 1.6s forwards;
+  }
+  nav a:hover{
+    color: rgb(43, 39, 39);
+  }
+  
+  nav a span {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid rgb(43, 39, 39);
+    z-index: -1;
+    border-radius: 1.5rem;
+    transform: scale(0) translateY(50px);
+    opacity: 0;
+    transition: .5s;
+  }
+  nav a:hover span{
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+.background {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    
+    
+}
+.background img{
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  filter:brightness(.5);
+  box-shadow: 0 0 10px 5px rgb(29, 29, 29) inset;
+}
+
+.background-log {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    display: flex;
+}
+.background-log img{
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  filter: brightness(.75);
+  box-shadow: 0 0 10px 5px rgb(29, 29, 29) inset;
+}
+
+.signup {
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    padding: 1vw;
+    display: flex;
+    justify-content: baseline;
+    background-color: #b38f619f;
+    border-radius: 1rem;
+    border: .25rem solid #c29963;
+    width: 24vw;
+    height: 65vh;
+    
+
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2) inset;
+    color: #382d1f;
+
+    animation: scaleIn 1.5s ease-in;
+}
+
+.bg-image1 {
+  position: absolute;
+  transform: translate(-20%);
+  border-radius: 1rem;
+  width: 25vw;
+  height: 30vw;
+  border-radius: 0px 20px 20px 0px;
+  object-fit: cover;
+  opacity: 0;
+}
+
+.signup form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+    width: 100%;
+    font-family: 'syne', sans-serif;
+}
+
+.signup form .input-group{
+  margin: 1rem auto;
+}
+
+.signup form span{
+  color: rgb(53, 48, 48);
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: nowrap;
+  font-family: 'syne';
+  margin: 3rem auto;
+  margin-bottom: .75rem;
+  justify-content: flex-start;
+}
+
+.signup form input[type=submit] {
+  width: 9rem;
+  height: 2.5rem;
+  margin-top: 3rem;
+  border: none;
+  border-radius: .4rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  background-color: bisque;
+  font-weight: bold;
+  font-family: 'syne', sans-serif;
+  color: #382d1f;
+  scale: .95;
+  transition: all .3s ease-in;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.signup form input[type=submit]:hover {
+scale: 1;
+background-color: rgb(255, 216, 169);
+box-shadow: .2rem .5rem 0 0 #382d1f;
+}
+.signup form input[type=submit]:active {
+scale: .8;
+background-color: #695336;
+color: bisque;
+box-shadow: .2rem .5rem 0 0 #382d1f;
+}
+.signup form p {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signup form a {
+  color: rgb(53, 48, 48);
+  text-decoration: none;
+  background-color: bisque;
+  border-radius: 1rem;
+  padding: .35rem .6rem;
+  font-weight: bold;
+  margin-left: .3rem;
+  scale: .8;
+  transition: all .3s ease-in;
+}
+
+.signup form a:hover {
+scale: 1.2;
+background-color: rgb(255, 216, 169);
+box-shadow: .2rem .2rem 0 0 #382d1f;
+}
+.signup form a:active {
+scale: .8;
+background-color: #695336;
+color: bisque;
+box-shadow: .2rem .2rem 0 0 #382d1f;
+}
+
+
+/* LOGIN PAGE */
+
+.login {
+    width: 24vw;
+    height: 65vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    padding: 1vw;
+    
+    /* border: 2px solid rgba(0, 0, 0, 0.2); */
+    border: 3px solid beige;
+    border-radius: 1rem;
+
+
+    overflow: hidden;
+    background-color: rgba(255, 235, 211, 0.479);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2) inset;
+    color: #382d1f;
+
+    animation: scaleIn 1.5s ease-in;
+}
+.login h1{
+  font-size: 2vw;
+  font-family: Syne;
+  margin-top: 3vh;
+}
+.login form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+    font-family: Syne;
+    flex: 2;
+}
+
+.input-group{
+  width: 90%;
+  white-space: nowrap;
+  position: relative;
+  border: 2px solid black;
+  margin: .75rem 0;
+  border-radius: 1rem;
+  padding: .5rem .75rem;
+}
+.input-group input{
+  width: 15vw;
+  height: 2vw;
+  border: none;
+  border-radius: 20px;
+  color: #382d1f;
+  padding: 10px;
+  background: transparent;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.input-group i{
+  padding: .2rem;
+}
+.input-group label{
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  margin: 0 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all .2s ease-in;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label
+{
+  top: -15%;
+  color: rgba(255, 235, 211, 0.479);
+  background-color: #382d1f;
+  padding: .1rem .5rem ;
+  border-radius: .1rem;
+}
+.login form input[type=submit] {
+    width: 9rem;
+    height: 2.5rem;
+    margin-top: 3rem;
+    border: none;
+    border-radius: .4rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    background-color: bisque;
+    font-weight: bold;
+    font-family: 'syne', sans-serif;
+    color: #382d1f;
+    scale: .95;
+    transition: all .3s ease-in;
+}
+
+
+.login form input[type=submit]:hover {
+  scale: 1;
+  background-color: rgb(255, 216, 169);
+  box-shadow: .2rem .5rem 0 0 #382d1f;
+}
+.login form input[type=submit]:active {
+  scale: .8;
+  background-color: #695336;
+  color: bisque;
+  box-shadow: .2rem .5rem 0 0 #382d1f;
+}
+
+.login form p {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.login form a {
+    color: rgb(53, 48, 48);
+    text-decoration: none;
+    background-color: bisque;
+    border-radius: 1rem;
+    padding: .35rem .6rem;
+    font-weight: bold;
+    margin-left: .3rem;
+    scale: .8;
+    transition: all .3s ease-in;
+}
+
+.login form a:hover {
+  scale: 1.2;
+  background-color: rgb(255, 216, 169);
+  box-shadow: .2rem .2rem 0 0 #382d1f;
+}
+.login form a:active {
+  scale: .8;
+  background-color: #695336;
+  color: bisque;
+  box-shadow: .2rem .2rem 0 0 #382d1f;
+}
+
+::placeholder {
+    color: white;
+}
+
+
+/* animations */
+@keyframes navbar{
+    0%{
+      opacity: 0;
+      width: 1rem;
+      height: 2rem;
+      border-radius: 50%;
+      top: -5%;
+      filter: blur(10);
+    };
+    50%{
+      opacity: 1;
+      width: 1rem;
+      height: 2rem;
+      border-radius: 50%;
+      top: 4%;
+      filter: blur(0);
+    }
+    70%{
+      width: 1rem;
+      height: 2rem;
+
+    }
+    100%{
+      width: 50vw;
+      top: 4%;
+    }
+  }
+  
+@keyframes nav-text-slide{
+    from{
+      opacity: 0;
+      transform: translateY(-1rem);
+      filter: blur(10);
+      
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+      
+    }
+  }
+@keyframes scaleIn{
+  from{
+
+    opacity: 0;
+    filter: blur(10);
+    transform: translateX(-20%);
+  }
+  to{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+}
+
+
+
+
+  /* responsive */
+  @media (max-width:500px) {
+    /* navbar */
+  
+    @keyframes navbar{
+      0%{
+        opacity: 0;
+        width: 1rem;
+        top: -5%;
+        filter: blur(10);
+      };
+      50%{
+        opacity: 1;
+        width: 1rem;
+        top: 4%;
+        filter: blur(0);
+      }
+      70%{
+        width: 1rem;
+      }
+      100%{
+        width: 85vw;
+        top: 4%;
+      }
+    }
+    nav{
+      width: 85vw;
+      height: 5%;
+    }
+    nav a{
+      font-size: .8rem;
+      white-space: nowrap;
+      padding: .4rem .3rem;
+    }
+    /* navbar-ends */
+    .login{
+      width: 80vw;
+      padding: 2rem;
+    }
+    .login h1{
+      font-size: 1.5rem;
+      font-family: Syne;
+      margin-top: 3vh;
+    }
+    .login form p{
+      white-space: nowrap;
+      font-size: 1rem;
+    }
+    .login form a {
+      margin: .8rem;
+    }
+    .input-group{
+      margin: .5rem auto;
+    }
+    .input-group input{
+      font-size: .9rem;
+      width: 100%;
+    }
+    .input-group label{
+      font-size: .8rem;
+    }
+    .login form input[type=submit] {
+      margin-top: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1rem;
+      width: 8rem;
+      height: 2rem;
+    }
+    .login form p {
+      font-size: .9rem;
+    }
+
+
+    .signup{
+      width: 80vw;
+      padding: 1rem;
+    }
+    .signup span{
+      font-size: 1.5rem;
+      font-family: Syne;
+      margin-top: 3vh;
+    }
+    /* .signup form{
+      padding: 1rem;
+    } */
+    /* .signup form p{
+      white-space: nowrap;
+      font-size: 1rem;
+    }
+    .signup form a {
+      margin: .8rem;
+    } */
+    .signup form input[type=submit] {
+      margin-top: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1rem;
+      width: 8rem;
+      height: 2rem;
+    }
+    .signup form p {
+      font-size: .9rem;
+      white-space: nowrap;
+    }
+  }  
