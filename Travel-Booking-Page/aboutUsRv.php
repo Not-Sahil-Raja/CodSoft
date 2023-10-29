@@ -1,6 +1,6 @@
 <?php
 session_start();
-$connection = mysqli_connect('localhost', 'root', '', 'book-db');
+$connection = mysqli_connect('localhost', 'root', '', 'bookdb');
 
 if (isset($_POST['sendRev'])) {
   $name = $_POST['name'];

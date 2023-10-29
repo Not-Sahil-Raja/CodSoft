@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect('localhost', 'root', '', 'book-db');
+$conn = mysqli_connect('localhost', 'root', '', 'bookdb');
 if (isset($_POST['search'])) {
   $searchKey = $_POST['search'];
   $sql = "select * from book where city like '%$searchKey%'";
@@ -34,20 +34,7 @@ $all_product = $conn->query($sql);
     </form>
 
   </div>
-  <div class="extraAdds">
-    <div class="adds">
-      <div class="slider">
-        <img id="slider-1" src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-        <img id="slider-2" src="https://images.unsplash.com/photo-1642611042267-99f0e064aa50?auto=format&fit=crop&q=80&w=2188&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-        <img id="slider-3" src="https://images.unsplash.com/photo-1589999296622-5dd73a58cf2f?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-      </div>
-      <div class="slider-nav">
-        <a href="#slider-1"></a>
-        <a href="#slider-2"></a>
-        <a href="#slider-3"></a>
-      </div>
-    </div>
-  </div>
+
 
   <div class="packages">
     <!-- cards -->

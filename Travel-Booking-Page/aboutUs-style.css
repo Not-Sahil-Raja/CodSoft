@@ -12,6 +12,7 @@ html , body{
     height: 100%;
     width: 100%;
     overflow: hidden;
+    
 }
 
 nav{
@@ -131,7 +132,7 @@ nav a:hover span{
   position: absolute;
   overflow: hidden;
   width: 100%;
-  height: 73vh;
+  height: 90vh;
   overflow: hidden;
   z-index: -1;
 }
@@ -159,8 +160,8 @@ nav a:hover span{
 }
 .member{
   background-color: #695336;
-  height: 85%;
-  width: 10vw;
+  min-height: 85%;
+  min-width: 10vw;
   display: flex;
   flex-direction: column;
   gap:.5rem;
@@ -206,6 +207,24 @@ nav a:hover span{
   text-align: center;
   text-overflow: ellipsis;
   box-shadow: 0 0 .3rem .1rem #1f170d inset;
+  overflow: auto;
+
+}
+.aboutUs::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #0f0f0f;
+}
+.aboutUs::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #292929;
+}
+.aboutUs::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: antiquewhite;
 }
 .aboutUs span{
   font-size: 1.5rem;
@@ -217,6 +236,7 @@ nav a:hover span{
   color: rgb(248, 227, 201);
   width: 70%;
   margin: 2vh auto;
+  
 }
 
 .contactUs{
@@ -229,6 +249,7 @@ nav a:hover span{
   padding: 1vh 1vw;
   font-family: 'syne';
   color: bisque;
+  overflow-y: auto;
 }
 .contactUs h1{
   flex: 1;
@@ -295,7 +316,7 @@ nav a:hover span{
   border-radius: .5rem;
   outline: none;
   border: none;
-  padding: .5rem;
+  padding: .1rem .25rem;
   background-color: #50402b;
   border: .15rem solid #695336;
   position: relative;
@@ -367,6 +388,23 @@ nav a:hover span{
 }
 .contactUs .contact-us .cu i {
   padding: .2rem;
+}
+
+.contactUs::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #0f0f0f;
+}
+.contactUs::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #292929;
+}
+.contactUs::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: antiquewhite;
 }
 .cu{
   color: #a78456;

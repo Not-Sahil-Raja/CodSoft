@@ -1,6 +1,6 @@
 <?php
 session_start();
-$connection = mysqli_connect('localhost', 'root', '', 'book-db');
+$connection = mysqli_connect('localhost', 'root', '', 'bookdb');
 ?>
 
 <!DOCTYPE html>
@@ -49,7 +49,7 @@ $connection = mysqli_connect('localhost', 'root', '', 'book-db');
             </div>
             <div>
               <span>How Many:</span>
-              <input type="number" placeholder="How Many Person " name="guests" required min="1" max="30" />
+              <input type="number" placeholder="How Many Person " name="guests" required min="1" max="30" class="numPer" value="1" />
             </div>
           </div>
 

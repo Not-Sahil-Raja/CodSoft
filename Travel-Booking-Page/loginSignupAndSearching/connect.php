@@ -3,7 +3,7 @@ $name = $_POST['name'];
 $password = $_POST['password'];
 
 
-$conn = new mysqli('localhost', 'root', '', 'book-db');
+$conn = new mysqli('localhost', 'root', '', 'bookdb');
 
 if ($conn->connect_error) {
     die('connection failed :' . $conn->connect_error);

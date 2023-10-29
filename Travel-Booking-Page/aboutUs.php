@@ -1,6 +1,6 @@
 <?php
 session_start();
-$connection = mysqli_connect('localhost', 'root', '', 'book-db');
+$connection = mysqli_connect('localhost', 'root', '', 'bookdb');
 ?>
 
 <!DOCTYPE html>
@@ -63,7 +63,7 @@ $connection = mysqli_connect('localhost', 'root', '', 'book-db');
           </div>
 
           <div class="submitBtn">
-            <input type="submit" name="sendRev" value="Sumbit" id="reviewSubmit" />
+            <input type="submit" name="sendRev" value="Submit" id="reviewSubmit" />
           </div>
         </form>
       </div>
