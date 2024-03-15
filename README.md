@@ -22,28 +22,11 @@ This is a full-stack travel booking website developed using PHP, MySQL, HTML, CS
   - PHP: Server-side scripting language for handling user authentication, booking requests, and database operations.
   - MySQL: Relational database management system for storing user data, travel packages, and booking information.
 
-## Folder Structure
+## Team Members
 
-The project folder structure is organized as follows:
-
-```
-travel-booking-website/
-│
-├── assets/           # Contains CSS, JavaScript, and image files
-│   ├── css/
-│   ├── js/
-│   ├── images/
-│
-├── includes/         # Contains PHP files for including header, footer, and database connection
-│
-├── pages/            # Contains PHP files for different pages like login, register, booking, dashboard
-│
-├── config/           # Contains configuration files like database credentials
-│
-├── sql/              # Contains SQL scripts for creating database tables
-│
-├── README.md         # This README file
-```
+  <h3><a href="https://github.com/AvirupRay">Avirup Ray ➚</a> </h3> 
+  <h3><a href="https://github.com/Roushan1512">Roushan Poddar ➚</a> </h3> 
+  <h3><a href="https://github.com/Not-Sahil-Raja">MD Sahil Raja ➚</a> </h3> 
 
 ## Screenshots
 
